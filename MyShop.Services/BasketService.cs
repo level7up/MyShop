@@ -131,7 +131,7 @@ namespace MyShop.Services
                                         join p in productcontext.Collection() on item.ProductId equals p.Id
                                         select item.Quantity * p.Price).Sum();
                 model.BasketCount = basketCount ?? 0;
-                model.BasketTotal = basketTotal ?? 0;
+                model.BasketTotal = basketTotal ?? decimal.Zero;
 
                 return model;
 
