@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace MyShop.WebUI.Controllers
 {
+
     public class BasketController : Controller
     {
         IRepository<Customer> customers;
